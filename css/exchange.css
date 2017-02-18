@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height:100%;
+    font-size: 12px;
+    position: relative;
+    font-family: "Microsoft YaHei" ! important;
+    //overflow: hidden;
+}
+
+i,em{
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+li{
+    list-style: none;
+}
+
+.body-wrapper{
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    padding-left: auto;
+    padding-right:auto;
+    margin-left: auto;
+    margin-right:auto;
+    /*overflow: scroll;*/
+}
+
+.body-wrapper > img{
+    width: 100%;
+    height:auto;
+    display: block;
+}
+
+.exchange-message,.exchange-prize{
+    display: block;
+    width: 100%;
+   /* height:100%;*/
+    position: relative;
+    /*overflow: hidden;*/
+}
+.exchange-message{
+    text-align: center;
+    /*background: url("../images/exChangebg.jpg") no-repeat center top;
+    background-size:cover;*/
+}
+.exchange-message > img{
+    width: 100%;
+    height:auto;
+    display: block;
+}
+.exchangeForm{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    padding:8% 8%;
+    height: 200px;
+    display: block;
+}
+
+.exchange-table{
+    display: inline-block;
+}
+.exchange-table .group-box{
+    text-align: left;
+    background: white;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    padding:0 5px;
+    margin-top: 1.5rem;
+}
+
+.group-box > input{
+    letter-spacing: 1px;
+    text-indent: 2px;
+    border:medium none;
+    margin:0.8rem 0;
+}
+
+
+
+.group-box:nth-child(2) > input{
+    width: 100%;
+}
+
+.group-box:nth-child(3){
+    text-align: center;
+    background-color: transparent;
+}
+
+.group-box >.gainExchange{
+    text-align: center;
+    width: 5.5rem;
+    color: #000;
+    letter-spacing: 1px;
+    margin:0 5px;
+    display: inline-block;
+}
+
+.exchange-prize img{
+    width: 100%;
+    display: block;
+    height:auto;
+}
+
+.group-box .exchange-submit{
+    display: inline-block;
+    vertical-align: middle;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding:0.8rem 2.8rem;
+}
+
+.panel-alert{
+    position: fixed;
+    /*line-height: 667px;*/
+    display: block;
+    width: 100%;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding:0 2rem;
+    -webkit-transform:  scale(0);
+    -moz-transform:  scale(0);
+    -ms-transform: scale(0) ;
+    -o-transform: scale(0) ;
+    transform: scale(0) ;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition:  all 0.1s;
+    -o-transition:  all 0.1s;
+    transition: all 0.1s;
+    background-color:transparent;
+    z-index: 12;
+}
+
+
+.panel-box{
+    width: 100%;
+    /*height: 100px;*/
+    background-color: white;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    border-radius: 10px;
+    /*transform:;*/
+}
+.panel-box .clean-alter{
+    position: absolute;
+    top: 2%;
+    /*background-color: red;*/
+    right: 3%;
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 50%;
+    background: url("../images/clean-alert.png") no-repeat center center;
+    background-size: cover;
+}
+.panel-box img{
+    width: 100%;
+    display: block;
+    height:auto;
+}
+
+.hintMessage{
+    line-height: 2rem;
+    border-radius: 10px;
+    /*margin: 4rem 0;*/
+    display: block;
+}
+
+.context{
+    margin: 4rem 0;
+    display: block;
+}
+
+
+@media (min-width:375px){
+
+    .group-box:nth-child(3){
+        text-align: center;
+        margin-top: 2rem;
+        background-color: transparent;
+    }
+
+}
+
+@media (min-width:768px){
+
+}
+
